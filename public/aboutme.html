@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/mypicture.jpg" type="image/x-icon">
+    <title>Cairuoyao's about me page</title>
+</head>
+<body>
+    
+    <div class="bg">
+        <button class="circle_button2" onclick="hobbies()"><strong>Hobbies</strong></button>
+        <button class="circle_button1" onclick="sports()"><strong>Sports</strong></button>
+        <button class="circle_button3" onclick="motto()"><strong>Motto</strong></button>
+        <button class="circle_button4" onclick="family()"><strong>Family</strong></button>
+        <button id="nav-toggle">Nav</button>
+        <nav id="navbar" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me more</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                
+            </ul>
+        </nav>
+        <div class="proflieCard">
+            
+            
+            <div class="logo1">
+                <img src="img/mypicture.jpg" alt="picture2" class="logo2">
+            </div>
+            <p class="name" style="color: hsl(0, 0%, 100%);">Ruoyao&nbsp;Cai</p>
+            
+            <div class="slogan" id="slogan">
+                <p class="slogan2" id="slogan2">
+                    <strong>You can learn me more through four aspects:</strong><br>
+                    Sports<br>
+                    Hobbies<br>
+                    Motto<br>
+                    Familiy<br>
+                </p>
+                
+            </div>
+            
+
+            
+
+        <footer class="footer">
+            <p class="footer2">&copy2024 Crystal_Cry</p>
+        </footer>
+
+        </div>
+
+        
+    </div>
+    
+    
+
+    
+    <div class="background" id="background"></div>
+    <div class="background2" id="background2"></div>
+    
+    <script>
+        
+        
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script>
+        const socket = io();
+        window.onload=load2D_bg();
+        window.onload=load2D_bg2();
+        window.onload=load2D_bg2_2();
+        socket.emit('pageLoaded', { message: 'Home page loaded' });
+        socket.on('updateLeaderboard', function(data) {
+            console.log('Leaderboard update:', data);
+            // Handle leaderboard update here
+        });
+
+
+    </script>
+    
+</body>
+</html>

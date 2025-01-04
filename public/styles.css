@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#quiz-container {
+    margin-top: 20px;
+}
+
+#options label {
+    margin-right: 10px;
+}
+
+#timer {
+    margin-top: 10px;
+}
+
+#leaderboard {
+    margin-top: 20px;
+}
+
+#leaderboard li {
+    margin-bottom: 5px;
+}

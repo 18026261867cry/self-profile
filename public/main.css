@@ -1,0 +1,325 @@
+html {
+    position: relative;
+    overflow: hidden !important;
+  }
+body {
+    font-family: 'Quicksand', sans-serif;
+    padding:0;
+    margin:0;
+
+  }
+.bg{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    
+    position: absolute;
+    z-index: 0;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("img/nonono1.png");
+    position: absolute;
+    z-index: -5;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background2{
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-image: url("img/nonono2.png");
+    position: absolute;
+    z-index: -4;
+}
+
+
+@media screen and (max-width : 768px) {
+	.background {
+		background-size:cover;
+	}
+    .background2 {
+		background-size:cover;
+	}
+} 
+@media screen and (max-width : 1000px) {
+	.background {
+		background-size:122%;
+	}
+    .background2 {
+		background-size:122%;
+	}
+} 
+@media screen and (max-width : 2333333px) {
+	.background {
+		background-size:122%;
+	}
+    .background2 {
+		background-size:122%;
+	}
+} 
+
+
+.profileCard{
+    
+    
+    z-index: 0;
+
+}
+.logo1{
+
+    margin: auto;
+    margin-top: -20px;
+    width: 200px;
+    height: 200px;
+    /*background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #ffffff;
+    */
+}
+.logo2{
+    width: 180px;
+    height: 180px;
+    margin: 5px 5px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.9);
+    transition: all 1s;
+    /*box-shadow: 0px 0px 10px #ffffff;*/
+}
+
+.logo2:hover{
+    transform: rotate(360deg);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
+
+    transition: all 1s;
+    /*box-shadow: 0px 0px 10px #ffffff;*/
+}
+
+.name{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    text-shadow: 0px 0px 12px rgb(14, 10, 10);
+    transition: all 0.5s;
+}
+.name:hover{
+    text-shadow: 0px 0px 30px white;
+
+    transition: all 0.5s;
+}
+
+.slogan{
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    text-shadow: 0px 0px 12px #1f1111;
+    box-shadow: 0px 0px 12px #ffffff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.slogan:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 0px 25px #ffffff;
+    transition: all 0.5s;
+}
+
+.slogan2{
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-size: 23px;
+    max-width: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.circle_button1 {
+    margin-left: 1100px;
+    margin-bottom: 350px;
+    position: absolute;
+    width: 150px;           /* 按钮宽度 */
+    height: 150px;          /* 按钮高度 */
+    border-radius: 50%;     /* 圆角半径 */
+    background-color: rgba(255, 255, 255, 0.1);/* 按钮背景颜色 */
+    color: rgb(253, 251, 251);          /* 文本颜色 */
+    border: 1px solid #fefafa;          /* 无边框 */
+    cursor: pointer;        /* 鼠标指针 */
+    display: flex;          /* 使用 flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    font-size: 27px;        /* 字体大小 */
+}
+.circle_button1:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+}
+.circle_button2 {
+    margin-right: 1100px;
+    margin-bottom: 350px;
+    position: absolute;
+    width: 150px;           /* 按钮宽度 */
+    height: 150px;          /* 按钮高度 */
+    border-radius: 50%;     /* 圆角半径 */
+    background-color: rgba(255, 255, 255, 0.1);/* 按钮背景颜色 */
+    color: rgb(253, 251, 251);          /* 文本颜色 */
+    border: 1px solid #fefafa;          /* 无边框 */
+    cursor: pointer;        /* 鼠标指针 */
+    display: flex;          /* 使用 flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    font-size: 27px;        /* 字体大小 */
+}
+.circle_button2:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+}
+.circle_button3 {
+    margin-left: 1100px;
+    margin-bottom: -350px;
+    position: absolute;
+    width: 150px;           /* 按钮宽度 */
+    height: 150px;          /* 按钮高度 */
+    border-radius: 50%;     /* 圆角半径 */
+    background-color: rgba(255, 255, 255, 0.1);/* 按钮背景颜色 */
+    color: rgb(253, 251, 251);          /* 文本颜色 */
+    border: 1px solid #fefafa;          /* 无边框 */
+    cursor: pointer;        /* 鼠标指针 */
+    display: flex;          /* 使用 flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    font-size: 27px;        /* 字体大小 */
+}
+.circle_button3:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+}
+.circle_button4 {
+    margin-left:-1100px;
+    margin-bottom: -350px;
+    position: absolute;
+    width: 150px;           /* 按钮宽度 */
+    height: 150px;          /* 按钮高度 */
+    border-radius: 50%;     /* 圆角半径 */
+    background-color: rgba(255, 255, 255, 0.1);/* 按钮背景颜色 */
+    color: #ffffff;         /* 文本颜色 */
+    border: 1px solid #fefafa;          /* 无边框 */
+    cursor: pointer;        /* 鼠标指针 */
+    display: flex;          /* 使用 flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    font-size: 27px;        /* 字体大小 */
+}
+.circle_button4:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+}
+#nav-toggle {
+    margin-right: 780px;
+    margin-bottom: 620px;
+    position: absolute;
+    width: 100px;           /* 按钮宽度 */
+    height: 70px;          /* 按钮高度 */
+    border-radius: 20%;     /* 圆角半径 */
+    background-color: #1d628dbf;/* 按钮背景颜色 */
+    color: rgb(253, 251, 251);          /* 文本颜色 */
+    border: 3px solid hsla(240, 5%, 4%, 0.435);          /* 无边框 */
+    cursor: pointer;        /* 鼠标指针 */
+    display: flex;          /* 使用 flex 布局 */
+    align-items: center;    /* 垂直居中 */
+    justify-content: center;/* 水平居中 */
+    font-size: 30px;  
+    font-family:'Times New Roman', Times, serif
+    
+}
+#nav-toggle:hover {
+    background-color: rgba(54, 52, 52, 0.4);
+    color: #ffffff;
+    box-shadow: 0px 0px 12px #ffffff;
+    transition: all 0.5s;
+}
+
+
+#navbar {
+    margin-bottom: 400px;
+    margin-left: -125px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+
+
+#navbar ul {
+    list-style-type:none;
+    padding: 0;
+    margin:0;
+}
+
+#navbar ul li {
+    margin: 5px 0;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display:grid;
+    background-color: #01000000;
+    font-weight: 900;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+   
+}
+
+#navbar ul li a:hover {
+    background-color: #dddddd;
+    color: #1f1111;
+}
+#navbar.show {
+    max-height: 500px; /* 足够显示内容的高度 */
+}
+
+
+.footer{
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+    color:rgba(255, 255, 255, 0.8);
+    font-size: 10px;
+}
+
+.footer2{
+    text-align: center;
+}
+
+a{
+    color: rgba(255, 255, 255, 0.8);
+}
