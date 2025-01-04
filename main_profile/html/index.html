@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/logo1.png" type="image/x-icon">
+    <title>Cairuoyao's home page</title>
+</head>
+<body>
+    <div class="bg">
+        <button id="nav-toggle">Nav</button>
+        <nav id="navbar" class="hidden">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About me more</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+        <div class="profileCard">
+            <div class="logo1">
+                <img src="img/logo1.png" alt="picture2" class="logo2">
+            </div>
+            <p class="name">Crystal_Cry</p>
+            <div class="slogan" id="slogan">
+                <p class="slogan2" id="slogan2">
+                    Chinese name:&nbsp;&nbsp;蔡若瑶<br>
+                    Age:&nbsp;&nbsp;20<br>
+                    Gender:&nbsp;&nbsp;Girl<br>
+                    Major:&nbsp;&nbsp;Information management and information system
+                </p>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer2">&copy; 2024 Crystal_Cry</p>
+        </footer>
+    </div>
+    
+    <div class="background" id="background"></div>
+    <div class="background2" id="background2"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <script>
+        const socket = io();
+
+        window.onload = function() {
+            load2D_bg();
+            load2D_bg2();
+            load2D_bg2_2();
+        };
+
+        // Example of emitting an event to the server
+        socket.emit('pageLoaded', { message: 'Home page loaded' });
+
+        // Listening for events from the server
+        socket.on('updateLeaderboard', function(data) {
+            console.log('Leaderboard update:', data);
+            // Handle leaderboard update here
+        });
+    </script>
+</body>
+</html>

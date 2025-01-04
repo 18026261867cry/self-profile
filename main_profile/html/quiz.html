@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择题测试程序</title>
+    <link rel="stylesheet" href="styles.css"> <!-- 样式文件 -->
+</head>
+<body>
+    <div id="start-container">
+        <label for="username">请输入用户名：</label>
+        <input type="text" id="username" placeholder="请输入用户名">
+        <button onclick="startQuiz()">开始答题</button>
+    </div>
+
+    <div id="quiz-container" style="display: none;">
+        <div id="question"></div>
+        <div id="options">
+            <label for="optionA"><input type="radio" id="optionA" name="option" value="A">A</label>
+            <label for="optionB"><input type="radio" id="optionB" name="option" value="B">B</label>
+            <label for="optionC"><input type="radio" id="optionC" name="option" value="C">C</label>
+            <label for="optionD"><input type="radio" id="optionD" name="option" value="D">D</label>
+        </div>
+        <button onclick="nextQuestion()">下一题</button>
+        <div id="timer"></div>
+    </div>
+    
+    
+    
+    
+
+    <div id="result-container" style="display: none;">
+        <h2>答题结果</h2>
+        <div id="correct-answers"></div>
+        <div id="total-time"></div>
+        <h2>排行榜</h2>
+        <ol id="leaderboard"></ol>
+    </div>
+
+    <script src="script.js"></script> <!-- JavaScript 文件 -->
+</body>
+</html>
